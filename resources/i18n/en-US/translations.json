@@ -1,0 +1,55 @@
+{
+    "restore_backup_view": {
+        "title": "Restore backup",
+        "not_found_dialog_hint": "Restore file not found!",
+        "not_found_dialog_text": "To restore, please place your backup file into\n{}\n\nMake sure the backup is valid as it will overwrite the console's partition files and might cause your Switch to stop booting!",
+        "not_found_dialog_btn": "close",
+        "warning": "Restoring this backup WILL overwrite all files!\n(Your saves will be preserved)\n\nMake sure the backup is valid as it will overwrite the console's partition files and might cause your Switch to stop booting!",
+        "working": "Restoring...",
+        "complete": "Backup restored!"
+    },
+    "create_backup_view": {
+        "title": "Create manual backup",
+        "warning": "All linking and unlinking operations will produce a backup before making changes!\n\nYou should only use this option if you want to manually create a backup.",
+        "working": "Backing up...",
+        "complete": "Backup created!"
+    },
+    "link_accounts_view": {
+        "title": "Link selected accounts",
+        "warning": "Linking accounts will overwrite all previous links.\n(Your saves will be preserved)\n\nIf any of the selected accounts had a NNID link, it will be overwritten!",
+        "working": "Linking...",
+        "complete": "Accounts linked!"
+    },
+    "unlink_accounts_view": {
+        "title": "Unlink selected accounts",
+        "warning": "Unlinking will change users accounts.\n(Your saves will be preserved)\n\nIf any of the selected accounts had a NNID link, it will be erased!",
+        "working": "Uninking...",
+        "complete": "Accounts unlinked!"
+    },
+    "country_select_view": {
+        "title": "Select country for linked accounts"
+    },
+    "account_select_view": {
+        "title": "Select accounts to link/unlink",
+        "select_all": "Select all",
+        "unselect_all": "Unselect all",
+        "selected_count": "{}/{} selected",
+        "extra_info": "Found {} account{}\nReboot to payload {}",
+        "reboot_payload_disabled": "disabled",
+        "reboot_payload_inactive": "inactive ({} not found)",
+        "reboot_payload_active": "active"
+    },
+    "account_list_item": {
+        "linked": "Linked",
+        "not_linked": "Not linked"
+    },
+    "confirm_view": {
+        "continue": "Continue",
+        "back": "Back",
+        "reboot": "Reboot",
+        "reboot_to_payload": "Reboot to payload"
+    },
+    "errors": {
+        "no_accounts_selected": "No accounts selected!"
+    }
+}
