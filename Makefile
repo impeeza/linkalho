@@ -37,15 +37,15 @@ include $(DEVKITPRO)/libnx/switch_rules
 #   of a homebrew executable (.nro). This is intended to be used for sysmodules.
 #   NACP building is skipped as well.
 #---------------------------------------------------------------------------------
-BUILD		:=	build
-SOURCES		:=	source source/core source/styles source/utils source/views lib/zipper/source
-DATA		:=	data
-INCLUDES	:=	include lib/zipper/include
-APP_TITLE   :=  Linkalho
-APP_AUTHOR  :=  rrocha
-APP_VERSION :=  2.0.1
-TARGET		:=	$(shell echo $(APP_TITLE) | tr A-Z a-z)
-ROMFS				:=	resources
+BUILD			:=	build
+SOURCES			:=	source source/core source/styles source/utils source/views lib/zipper/source
+DATA			:=	data
+INCLUDES		:=	include lib/zipper/include
+APP_TITLE		:=	Linkalho
+APP_AUTHOR		:=	rrocha & Impeeza
+APP_VERSION		:=	2.0.2
+TARGET			:=	$(shell echo $(APP_TITLE) | tr A-Z a-z)
+ROMFS			:=	resources
 BOREALIS_PATH		:=	lib/borealis
 BOREALIS_RESOURCES	:=	romfs:/
 
