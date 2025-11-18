@@ -1,0 +1,55 @@
+{
+    "restore_backup_view": {
+        "title": "還原備份",
+        "not_found_dialog_hint": "找不到還原檔案！",
+        "not_found_dialog_text": "要還原，請將您的備份檔案放置於\n{}\n\n請確保備份有效，因為它將會覆蓋主機的分割槽檔案，並可能導致您的Switch無法開機！",
+        "not_found_dialog_btn": "關閉",
+        "warning": "還原此備份將會覆蓋所有檔案！\n(您的存檔將會保留)\n\n請確保備份有效，因為它將會覆蓋主機的分割槽檔案，並可能導致您的Switch無法開機！",
+        "working": "正在還原...",
+        "complete": "備份已還原！"
+    },
+    "create_backup_view": {
+        "title": "建立手動備份",
+        "warning": "所有連結與取消連結操作將會在進行變更前產生一份備份！\n\n如果您想手動建立備份，才應使用此選項。",
+        "working": "正在備份...",
+        "complete": "備份已建立！"
+    },
+    "link_accounts_view": {
+        "title": "連結選取的帳號",
+        "warning": "連結帳號將會覆蓋所有先前的連結。\n(您的存檔將會保留)\n\n如果任何選取的帳號有NNID連結，它將會被覆蓋！",
+        "working": "正在連結...",
+        "complete": "帳號已連結！"
+    },
+    "unlink_accounts_view": {
+        "title": "取消連結選取的帳號",
+        "warning": "取消連結將會變更使用者帳號。\n(您的存檔將會保留)\n\n如果任何選取的帳號有NNID連結，它將會被刪除！",
+        "working": "正在取消連結...",
+        "complete": "帳號已取消連結！"
+    },
+    "country_select_view": {
+        "title": "為連結的帳號選擇國家/地區"
+    },
+    "account_select_view": {
+        "title": "選擇要連結/取消連結的帳號",
+        "select_all": "全選",
+        "unselect_all": "取消全選",
+        "selected_count": "已選取 {} / {}",
+        "extra_info": "找到 {} 個帳號{}\n重新開機至載入程式 {}",
+        "reboot_payload_disabled": "已停用",
+        "reboot_payload_inactive": "不作用中 (找不到 {})",
+        "reboot_payload_active": "作用中"
+    },
+    "account_list_item": {
+        "linked": "已連結",
+        "not_linked": "未連結"
+    },
+    "confirm_view": {
+        "continue": "繼續",
+        "back": "返回",
+        "reboot": "重新開機",
+        "reboot_to_payload": "重新開機至載入程式"
+    },
+    "errors": {
+        "no_accounts_selected": "未選取任何帳號！"
+    }
+}
