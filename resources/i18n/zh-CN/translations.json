@@ -1,0 +1,55 @@
+{
+    "restore_backup_view": {
+        "title": "恢复备份",
+        "not_found_dialog_hint": "没有找到备份文件!",
+        "not_found_dialog_text": "要恢复，请将备份文件放入\n{}\n\n请确保备份有效，因为它会覆盖主机的分区文件，并可能导致你的 Switch 无法启动！",
+        "not_found_dialog_btn": "关闭",
+        "warning": "恢复此备份将会覆盖所有文件！\n(你的存档仍被保留)\n\n请确保备份有效，因为它会覆盖主机的分区文件，并可能导致你的 Switch 无法启动！",
+        "working": "恢复中，稍安勿躁...",
+        "complete": "恢复完成!"
+    },
+    "create_backup_view": {
+        "title": "创建手动备份",
+        "warning": "所有绑定和取消链接操作都会在进行更改之前生成备份！\n\n只有当你想要手动创建备份时才应使用此选项。",
+        "working": "备份中，稍安勿躁...",
+        "complete": "备份完成!"
+    },
+    "link_accounts_view": {
+        "title": "绑定选定的帐户",
+        "warning": "绑定账号将覆盖所有先前的绑定。\n(你的存档仍被保留)\n\n如果任何选定的账号已绑定 NNID，则该绑定将被覆盖！",
+        "working": "绑定中，稍安勿躁...",
+        "complete": "账户已绑定!"
+    },
+    "unlink_accounts_view": {
+        "title": "解绑选定的账户",
+        "warning": "取消绑定将更改用户帐户。\n(你的存档仍被保留)\n\n如果任何选定的帐户有 NNID 绑定，则该绑定将被删除！",
+        "working": "解绑中，稍安勿躁...",
+        "complete": "账户已解绑!"
+    },
+    "country_select_view": {
+        "title": "选择绑定账户的国家/地区"
+    },
+    "account_select_view": {
+        "title": "选择要绑定/取消绑定的帐户",
+        "select_all": "我全都选",
+        "unselect_all": "我全不选",
+        "selected_count": "{}/{} 已选",
+        "extra_info": "找到 {} 账户{}\n重启至Payload {}",
+        "reboot_payload_disabled": "已禁用",
+        "reboot_payload_inactive": "非活跃 ({} 未找到)",
+        "reboot_payload_active": "活跃"
+    },
+    "account_list_item": {
+        "linked": "绑定",
+        "not_linked": "未绑定"
+    },
+    "confirm_view": {
+        "continue": "继续",
+        "back": "返回",
+        "reboot": "重启",
+        "reboot_to_payload": "重启至Payload"
+    },
+    "errors": {
+        "no_accounts_selected": "嗯？！你还没选择任何帐户！"
+    }
+}
