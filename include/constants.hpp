@@ -17,5 +17,5 @@
 
 #define DEFAULT_COUNTRY "Portugal"
 #define DEFAULT_COUNTRY_CODE "PT"
-#define DEFAULT_LOCALE "en-US"
+#define DEFAULT_LOCALE "zh-CN"
 #define DEFAULT_TIMEZONE "Europe/Lisbon"
