@@ -11,70 +11,89 @@
 
 # <b>Linkalho</b>
 
-Linkalho is an homebrew app that will link NNID accounts offline. It links (or unlinks) <b>existing</b> accounts so you won't lose your saves.
-This app does not create new accounts. If you create a new account and want to link it, just re-run the app.
+Linkalho 是一款自制软件，可以离线关联 NNID 账号。它可以关联（或取消关联）<b>现有</b>账号，因此您不会丢失存档。
+
+此应用不会创建新账号。如果您创建了新账号并想要关联，只需重新运行此应用即可。
 
 <br>
 
-## <b>Why do I need this app?</b>
-If you never had issues with games/apps failing to launch until you link your Switch user account and you never experienced issues with certain titles stuck in _Updating game data_ or certain official emulators presenting you with nothing else but a black screen instead of the game selection, then you don't need to use this homebrew.
+## <b>我为什么需要这个应用？</b>
 
+如果您从未遇到过游戏/应用在关联 Switch 用户账号前无法启动的问题，也从未遇到过某些游戏卡在“正在更新游戏数据”界面，或者某些官方模拟器只显示黑屏而不显示游戏选择界面的问题，那么您无需使用此自制软件。
 <br>
 
-Do you like this app and find it useful? You can buy me a coffee clicking the link below. Thanks!<br>
+你喜欢这个应用吗？觉得它有用吗？你可以点击下面的链接请我喝杯咖啡。谢谢！(该打赏链接为原作者链接，非译者打赏链接)<br>
 <a href="https://paypal.me/rdmrocha"><img src="raw/buy-me-a-coffee.png" width="150px" /></a>
 
 <br>
 
-## <b>Frequently Asked Questions</b>:
-- Why can't I navigate the app via touchscreen or using the thumbs ticks?
-  - This is a very simple and straightforward app that most users will only use once or twice. Unless Borealis developers implement this natively, there are no plans for me to extend their feature set.
+## <b>常见问题解答</b>：
 
-- Can I go online with a fake/generated linked account?
-  - No! You have a hacked switch. Online is always a risk.
+- 为什么我无法通过触摸屏或拇指勾选来操作应用？
 
-- Can this app do "place whatever question here"?
-  - You can start by reading the [previous section](https://github.com/rdmrocha/linkalho#why-do-i-need-this-app). This app will allow you to link/unlink a fake/generated NNID to your user accounts without the need for an internet connection, and that's it. If you still fail to understand what this is and its purpose, it's highly likely that you simply don't need this app. Worry not: if you ever need it, you'll know it.
+- 这是一个非常简单易用的应用，大多数用户只会使用一两次。除非 Borealis 的开发者原生支持此功能，否则我没有计划扩展其功能集。
 
-<br>
+- 我可以使用虚假/生成的关联账户上网吗？
 
-## <b>Installation</b>:
-- Place the .nro file in the `/switch/linkalho` folder of your SDcard.
-- Go to the homebrew app and run Linkalho
+- 不行！您的 Switch 已被破解。上网始终存在风险。
+
+- 这个应用可以“在此处提问”吗？
+
+- 您可以先阅读[上一节](https://github.com/rdmrocha/linkalho#why-do-i-need-this-app)。此应用允许您在无需网络连接的情况下将虚假/生成的 NNID 关联/取消关联到您的用户账户，仅此而已。如果您仍然不理解这是什么以及它的用途，那么您很可能根本不需要此应用。别担心：如果你需要它，你自然会知道。
 
 <br>
 
-### <u>Reboot to payload</u>
-After completing the selected operation, Linkalho will reboot to an existing payload if:
-- the console hardware is Erista and the user places a payload file in the application's root (`/switch/linkalho/reboot.bin`)
+## <b>安装</b>：
 
-Reboot to payload is not supported on Mariko hardware!
+- 将 .nro 文件放入 SD 卡的 `/switch/linkalho` 文件夹中。
+
+- 打开 Homebrew 应用并运行 Linkalho。
 <br>
 
-## <b>Usage</b>:
+### <u>重启至有效载荷</u>
 
-### <u>Link selected accounts</u>
-- Will link all selected accounts from the ones present on the console. If any of the existing accounts is already linked, it will be re-linked (regardless of the NNIDs being officially linked or not).
-This operation creates a backup in `/switch/linkalho/backups`
+完成所选操作后，如果满足以下条件，Linkalho 将重启至现有有效载荷：
 
-### <u>Unlink selected accounts</u>
-- Will remove NNID linking from any of the selected accounts on the console regardless of the NNIDs being officially linked or not.
-This operation creates a backup in `/switch/linkalho/backups`
+- 控制台硬件为 Erista，且用户已将有效载荷文件放置在应用程序根目录 (`/switch/linkalho/reboot.bin`) 中。
 
-### <u>Restore backup</u>
-- Restores any previous state from a backup file. The file must be placed in `/switch/linkalho/restore/restore.zip`. If not present, the UI will notify the user.
-This operation creates a backup in `/switch/linkalho/backups`
+Mariko 硬件不支持重启至有效载荷！
 
-### <u>Create manual backup</u>
-- Will create a backup in `/switch/linkalho/backups`.
-All linking and unlinking operations will automatically produce a backup before making changes.
-<b>You should only use this option if you want to manually create a backup!</b>
+<br>
 
-### <u>Select country for linked accounts</u>
-- Allows the user to customize the country that will be injected into the linked account. This has impact in some software by showing the appropriate flag (like in mk8).
+## <b>用法</b>：
 
-### <u>Select accounts to link/unlink</u>
-- Allows the user to pick which accounts are going to be linked/unlinked. It defaults to **_all_**. If no accounts are selected and the user tries to perform a link or unlink operation, the application will show an error.
+### <u>链接所选帐户</u>
+
+- 将链接控制台上所有选定的帐户。如果任何现有帐户已链接，则会重新链接（无论 NNID 是否已正式链接）。
+
+此操作会在 `/switch/linkalho/backups` 中创建备份。
+
+### <u>取消链接所选帐户</u>
+
+- 将从控制台上任何选定的帐户中移除 NNID 链接，无论 NNID 是否已正式链接。
+
+此操作会在 `/switch/linkalho/backups` 目录下创建备份。
+
+### <u>恢复备份</u>
+
+- 从备份文件恢复任何先前的状态。该文件必须位于 `/switch/linkalho/restore/restore.zip` 目录下。如果该文件不存在，用户界面会通知用户。
+
+此操作会在 `/switch/linkalho/backups` 目录下创建备份。
+
+### <u>手动创建备份</u>
+
+- 将在 `/switch/linkalho/backups` 目录下创建备份。
+
+所有链接和取消链接操作都会在进行更改之前自动生成备份。
+
+<b>仅当您想要手动创建备份时才应使用此选项！</b>
+### <u>选择关联账户的国家/地区</u>
+
+- 允许用户自定义关联账户的国家/地区。这会影响某些软件，例如显示相应的标志（如 mk8）。
+
+### <u>选择要关联/取消关联的账户</u>
+
+- 允许用户选择要关联/取消关联的账户。默认值为**全部**。如果未选择任何账户，用户尝试执行关联或取消关联操作，应用程序将显示错误。
 
 <br>
 
